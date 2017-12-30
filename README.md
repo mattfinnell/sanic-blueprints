@@ -3,6 +3,8 @@
 ## Info
 Sanic Blueprints (with a set `url_prefix` parameter) wont tolerate `POST` requests
 
+`sanic.exceptions.InvalidUsage: Method POST not allowed for URL /api/failing`
+
 - This seems to only affect blueprints that have the `url_prefix` parameter set
 - [super weird] POST request will work if it is the only route in the blueprint
 
@@ -30,3 +32,5 @@ I was using [postman](https://www.getpostman.com/) for checking the following en
   # Failing Endpoint
   POST localhost:8000/api/failing --headers {"some": "data"}
 ```
+
+The Failing POST request returns a `sanic.exceptions.InvalidUsage: Method POST not allowed for URL /api/failing` error.
