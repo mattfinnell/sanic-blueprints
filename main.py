@@ -3,7 +3,7 @@ from sanic.response import text, json
 
 app = Sanic()
 
-passing_bp= Blueprint('passing_blueprint')
+passing_bp = Blueprint('passing_blueprint')
 failing_bp = Blueprint('failing_blueprint', url_prefix='/api/failing')
 
 
