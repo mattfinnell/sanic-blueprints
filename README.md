@@ -1,5 +1,8 @@
 # Sanic Blueprint POST bug
 
+## UPDATE
+[The bug](https://github.com/channelcat/sanic/issues/1074) has [been fixed!](https://github.com/channelcat/sanic/pull/1076)
+
 ## Info
 Sanic Blueprints (with a set `url_prefix` parameter) wont tolerate `POST` requests
 

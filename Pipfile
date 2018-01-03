@@ -7,8 +7,8 @@ name = "pypi"
 
 [packages]
 
-sanic = "*"
 ipython = "*"
+sanic = {git = "https://github.com/channelcat/sanic.git"}
 
 
 [dev-packages]
